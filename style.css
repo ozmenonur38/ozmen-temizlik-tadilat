@@ -39,19 +39,19 @@ footer{background:#031b2c;color:#d7e1e8;padding:48px 0 24px}.footer-grid{display
 .hero-card img {display:block; width:100% !important; max-width:520px; max-height:360px !important; height:auto !important; object-fit:contain; margin:0 auto 16px;}
 @media(max-width:700px){.brand img,.logo img,header img[alt*="logo"]{max-height:66px !important;}.hero-card img{max-height:280px !important;}}
 
-/* Ust menudeki logo duzenlemesi */
-.logo {
+/* Ust menu logo kutusunu duzelt */
+.brand {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
 }
 
-.logo img {
+.brand img {
   display: block;
-  width: auto;
-  max-width: 220px;
-  height: 76px;
+  width: auto !important;
+  height: 76px !important;
+  max-height: 76px !important;
   object-fit: contain;
   border-radius: 12px;
 }

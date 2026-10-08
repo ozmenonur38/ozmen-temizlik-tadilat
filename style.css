@@ -33,3 +33,8 @@ footer{background:#031b2c;color:#d7e1e8;padding:48px 0 24px}.footer-grid{display
 @media(max-width:620px){
   .nav{height:72px}.brand img{width:150px;height:48px}.menu{top:72px}.hero{padding:54px 0}.hero-actions .btn{width:100%}.section{padding:62px 0}.cards,.gallery,.trust-grid,.footer-grid{grid-template-columns:1fr}.card{padding:20px}.float-wa{right:14px;bottom:14px}.contact-card a,.contact-card div{flex-direction:column;gap:5px}
 }
+
+/* 2026 brand refresh: larger, clearer logo */
+.brand img, .logo img, header img[alt*="logo"], .site-logo img {max-height:90px !important; width:auto !important; object-fit:contain;}
+.hero-card img {display:block; width:100% !important; max-width:520px; max-height:360px !important; height:auto !important; object-fit:contain; margin:0 auto 16px;}
+@media(max-width:700px){.brand img,.logo img,header img[alt*="logo"]{max-height:66px !important;}.hero-card img{max-height:280px !important;}}

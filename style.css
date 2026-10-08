@@ -38,26 +38,17 @@ footer{background:#031b2c;color:#d7e1e8;padding:48px 0 24px}.footer-grid{display
 .brand img, .logo img, header img[alt*="logo"], .site-logo img {max-height:90px !important; width:auto !important; object-fit:contain;}
 .hero-card img {display:block; width:100% !important; max-width:520px; max-height:360px !important; height:auto !important; object-fit:contain; margin:0 auto 16px;}
 @media(max-width:700px){.brand img,.logo img,header img[alt*="logo"]{max-height:66px !important;}.hero-card img{max-height:280px !important;}}
-.brand {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-}
 
-.brand img {
-  display: block;
-  width: auto !important;
-  height: 76px !important;
-  max-height: 76px !important;
-  object-fit: contain;
-  border-radius: 12px;
-}
-@media (max-width: 620px) {
-  .float-wa {
-    right: 12px !important;
-    bottom: 12px !important;
-    padding: 10px 14px !important;
-    font-size: 13px !important;
-    border-radius: 30px !important;
-  }
+/* Galeri ve mobil düzen */
+.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px}
+.work-before-after{grid-template-columns:repeat(2,minmax(0,1fr));max-width:850px}
+.work-tile{display:block;overflow:hidden;border-radius:17px;border:1px solid #e5eaf0;background:#fff;box-shadow:0 8px 22px rgba(10,40,60,.08);color:#102b40}
+.work-tile img{width:100%;height:275px;object-fit:cover;display:block;transition:transform .2s}
+.work-tile:hover img{transform:scale(1.025)}
+.work-tile span{display:block;padding:13px 16px;font-weight:700;font-size:14px}
+.work-before-after img{height:340px}
+.work-tile video{width:100%;height:250px;background:#071d2e;display:block}
+.brand{background:transparent!important;border:none!important;box-shadow:none!important;padding:0!important}
+.brand img{display:block;width:auto!important;height:76px!important;max-height:76px!important;object-fit:contain;border-radius:12px}
+@media(max-width:800px){.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.work-tile img{height:230px}.work-before-after img{height:290px}}
+@media(max-width:560px){.work-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.work-grid:not(.work-before-after) .work-tile img{height:170px}.work-before-after img{height:220px}.work-tile span{padding:10px;font-size:12px}.video-grid{grid-template-columns:1fr}.work-tile video{height:220px}.brand img{height:66px!important;max-height:66px!important}}

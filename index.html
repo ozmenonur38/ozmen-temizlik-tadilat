@@ -9,6 +9,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+<style>
+/* Galeri fotoğrafları için site içi büyütme penceresi */
+.photo-lightbox {position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(7,16,29,.92)}
+.photo-lightbox.is-open {display:flex}
+.photo-lightbox__figure {margin:0;max-width:min(1100px,100%);max-height:100%;display:flex;flex-direction:column;align-items:center;gap:12px}
+.photo-lightbox__image {display:block;max-width:100%;max-height:calc(100dvh - 120px);width:auto;height:auto;object-fit:contain;border-radius:8px}
+.photo-lightbox__caption {color:#fff;text-align:center;font-size:15px}
+.photo-lightbox__close {position:absolute;top:12px;right:16px;border:0;background:#fff;color:#111;border-radius:50%;font-size:26px;width:42px;height:42px;cursor:pointer}
+#galeri a.work-tile {cursor:zoom-in}
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -98,7 +109,7 @@
   </div>
 </section>
 
-<section class="section" id="galeri"><div class="container"><div class="section-head"><div><span class="eyebrow">GERÇEK ÇALIŞMALARIMIZ</span><h2>Yaptığımız İşlerden Kareler</h2></div><p>Temizlik, PVC ve sineklik çalışmalarımızdan fotoğraf ve videolar.</p></div><h3 class="category-title">Zemin Temizliği • Öncesi / Sonrası</h3><div class="work-grid work-before-after"><a class="work-tile" href="galeri/foto-08.jpg" target="_blank" rel="noopener"><img src="galeri/foto-08.jpg" alt="Zemin temizliği ÖNCE" loading="lazy"><span>ÖNCE</span></a><a class="work-tile" href="galeri/foto-06.jpg" target="_blank" rel="noopener"><img src="galeri/foto-06.jpg" alt="Zemin temizliği SONRA" loading="lazy"><span>SONRA</span></a></div><h3 class="category-title second">Fotoğraf Galerisi</h3><div class="work-grid"><a class="work-tile" href="galeri/foto-01.jpg" target="_blank" rel="noopener"><img src="galeri/foto-01.jpg" alt="Fayans ve Zemin Temizliği" loading="lazy"><span>Fayans ve Zemin Temizliği</span></a><a class="work-tile" href="galeri/foto-02.jpg" target="_blank" rel="noopener"><img src="galeri/foto-02.jpg" alt="Ev İçi Genel Temizlik" loading="lazy"><span>Ev İçi Genel Temizlik</span></a><a class="work-tile" href="galeri/foto-03.jpg" target="_blank" rel="noopener"><img src="galeri/foto-03.jpg" alt="Ev İçi Koridor ve Zemin Temizliği" loading="lazy"><span>Ev İçi Koridor ve Zemin Temizliği</span></a><a class="work-tile" href="galeri/foto-04.jpg" target="_blank" rel="noopener"><img src="galeri/foto-04.jpg" alt="Merdiven ve Basamak Temizliği" loading="lazy"><span>Merdiven ve Basamak Temizliği</span></a><a class="work-tile" href="galeri/foto-05.jpg" target="_blank" rel="noopener"><img src="galeri/foto-05.jpg" alt="Yatak Odası Genel Temizliği" loading="lazy"><span>Yatak Odası Genel Temizliği</span></a><a class="work-tile" href="galeri/foto-07.jpg" target="_blank" rel="noopener"><img src="galeri/foto-07.jpg" alt="Ev İçi Detaylı Temizlik" loading="lazy"><span>Ev İçi Detaylı Temizlik</span></a><a class="work-tile" href="galeri/foto-09.jpg" target="_blank" rel="noopener"><img src="galeri/foto-09.jpg" alt="Yatak ve Döşeme Temizliği" loading="lazy"><span>Yatak ve Döşeme Temizliği</span></a><a class="work-tile" href="galeri/foto-10.jpg" target="_blank" rel="noopener"><img src="galeri/foto-10.jpg" alt="Koltuk Döşemesi Temizliği" loading="lazy"><span>Koltuk Döşemesi Temizliği</span></a><a class="work-tile" href="galeri/foto-11.jpg" target="_blank" rel="noopener"><img src="galeri/foto-11.jpg" alt="Koltuk Temizliği" loading="lazy"><span>Koltuk Temizliği</span></a><a class="work-tile" href="galeri/foto-12.jpg" target="_blank" rel="noopener"><img src="galeri/foto-12.jpg" alt="Koltuk Yıkama Uygulaması" loading="lazy"><span>Koltuk Yıkama Uygulaması</span></a><a class="work-tile" href="galeri/foto-13.jpg" target="_blank" rel="noopener"><img src="galeri/foto-13.jpg" alt="Sürgülü Sineklik Uygulaması" loading="lazy"><span>Sürgülü Sineklik Uygulaması</span></a><a class="work-tile" href="galeri/foto-14.jpg" target="_blank" rel="noopener"><img src="galeri/foto-14.jpg" alt="Koltuk ve Sandalye Temizliği" loading="lazy"><span>Koltuk ve Sandalye Temizliği</span></a><a class="work-tile" href="galeri/foto-15.jpg" target="_blank" rel="noopener"><img src="galeri/foto-15.jpg" alt="PVC ve Dış Mekân Uygulaması" loading="lazy"><span>PVC ve Dış Mekân Uygulaması</span></a><a class="work-tile" href="galeri/foto-16.jpg" target="_blank" rel="noopener"><img src="galeri/foto-16.jpg" alt="Yüksek Cam ve Pencere Temizliği" loading="lazy"><span>Yüksek Cam ve Pencere Temizliği</span></a><a class="work-tile" href="galeri/foto-17.jpg" target="_blank" rel="noopener"><img src="galeri/foto-17.jpg" alt="Koltuk Minderleri Temizliği" loading="lazy"><span>Koltuk Minderleri Temizliği</span></a></div><h3 class="category-title second">Çalışma Videolarımız</h3><div class="work-grid video-grid"><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-01.mp4"></video><span>Zemin Temizliği Çalışması</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-02.mp4"></video><span>Yatak Temizliği Uygulaması</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-03.mp4"></video><span>Yatak Yıkama İşlemi</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-04.mp4"></video><span>Yatak Temizliği Çalışması</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-05.mp4"></video><span>Koltuk Temizliği Uygulaması</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-06.mp4"></video><span>Döşeme Temizliği Çalışması</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-07.mp4"></video><span>Çalışma videosu 7</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-08.mp4"></video><span>Çalışma videosu 8</span></div></div></div></section>
+<section class="section" id="galeri"><div class="container"><div class="section-head"><div><span class="eyebrow">GERÇEK ÇALIŞMALARIMIZ</span><h2>Yaptığımız İşlerden Kareler</h2></div><p>Temizlik, PVC ve sineklik çalışmalarımızdan fotoğraf ve videolar.</p></div><h3 class="category-title">Zemin Temizliği • Öncesi / Sonrası</h3><div class="work-grid work-before-after"><a class="work-tile" href="galeri/foto-08.jpg" target="_blank" rel="noopener"><img src="galeri/foto-08.jpg" alt="Zemin temizliği ÖNCE" loading="lazy"><span>ÖNCE</span></a><a class="work-tile" href="galeri/foto-06.jpg" target="_blank" rel="noopener"><img src="galeri/foto-06.jpg" alt="Zemin temizliği SONRA" loading="lazy"><span>SONRA</span></a></div><h3 class="category-title second">Fotoğraf Galerisi</h3><div class="work-grid"><a class="work-tile" href="galeri/foto-01.jpg" target="_blank" rel="noopener"><img src="galeri/foto-01.jpg" alt="Fayans ve Zemin Temizliği" loading="lazy"><span>Fayans ve Zemin Temizliği</span></a><a class="work-tile" href="galeri/foto-02.jpg" target="_blank" rel="noopener"><img src="galeri/foto-02.jpg" alt="Ev İçi Genel Temizlik" loading="lazy"><span>Ev İçi Genel Temizlik</span></a><a class="work-tile" href="galeri/foto-03.jpg" target="_blank" rel="noopener"><img src="galeri/foto-03.jpg" alt="Ev İçi Koridor ve Zemin Temizliği" loading="lazy"><span>Ev İçi Koridor ve Zemin Temizliği</span></a><a class="work-tile" href="galeri/foto-04.jpg" target="_blank" rel="noopener"><img src="galeri/foto-04.jpg" alt="Merdiven ve Basamak Temizliği" loading="lazy"><span>Merdiven ve Basamak Temizliği</span></a><a class="work-tile" href="galeri/foto-05.jpg" target="_blank" rel="noopener"><img src="galeri/foto-05.jpg" alt="Yatak Odası Genel Temizliği" loading="lazy"><span>Yatak Odası Genel Temizliği</span></a><a class="work-tile" href="galeri/foto-07.jpg" target="_blank" rel="noopener"><img src="galeri/foto-07.jpg" alt="Yeşil Koltuk Temizliği" loading="lazy"><span>Yeşil Koltuk Temizliği</span></a><a class="work-tile" href="galeri/foto-09.jpg" target="_blank" rel="noopener"><img src="galeri/foto-09.jpg" alt="Yatak ve Döşeme Temizliği" loading="lazy"><span>Yatak ve Döşeme Temizliği</span></a><a class="work-tile" href="galeri/foto-10.jpg" target="_blank" rel="noopener"><img src="galeri/foto-10.jpg" alt="Koltuk Döşemesi Temizliği" loading="lazy"><span>Koltuk Döşemesi Temizliği</span></a><a class="work-tile" href="galeri/foto-11.jpg" target="_blank" rel="noopener"><img src="galeri/foto-11.jpg" alt="Koltuk Temizliği" loading="lazy"><span>Koltuk Temizliği</span></a><a class="work-tile" href="galeri/foto-12.jpg" target="_blank" rel="noopener"><img src="galeri/foto-12.jpg" alt="Koltuk Yıkama Uygulaması" loading="lazy"><span>Koltuk Yıkama Uygulaması</span></a><a class="work-tile" href="galeri/foto-13.jpg" target="_blank" rel="noopener"><img src="galeri/foto-13.jpg" alt="PVC Doğrama ve Sineklik Uygulaması" loading="lazy"><span>PVC Doğrama ve Sineklik Uygulaması</span></a><a class="work-tile" href="galeri/foto-14.jpg" target="_blank" rel="noopener"><img src="galeri/foto-14.jpg" alt="Sandalye Döşemesi Temizliği" loading="lazy"><span>Sandalye Döşemesi Temizliği</span></a><a class="work-tile" href="galeri/foto-15.jpg" target="_blank" rel="noopener"><img src="galeri/foto-15.jpg" alt="PVC ve Dış Mekân Uygulaması" loading="lazy"><span>PVC ve Dış Mekân Uygulaması</span></a><a class="work-tile" href="galeri/foto-16.jpg" target="_blank" rel="noopener"><img src="galeri/foto-16.jpg" alt="Yüksek Cam ve Pencere Temizliği" loading="lazy"><span>Yüksek Cam ve Pencere Temizliği</span></a><a class="work-tile" href="galeri/foto-17.jpg" target="_blank" rel="noopener"><img src="galeri/foto-17.jpg" alt="Koltuk Temizliği" loading="lazy"><span>Koltuk Temizliği</span></a></div><h3 class="category-title second">Çalışma Videolarımız</h3><div class="work-grid video-grid"><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-01.mp4"></video><span>Zemin Temizliği Çalışması</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-02.mp4"></video><span>Yatak Temizliği Uygulaması</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-03.mp4"></video><span>Yatak Yıkama İşlemi</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-04.mp4"></video><span>Yatak Temizliği Çalışması</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-05.mp4"></video><span>Koltuk Temizliği Uygulaması</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-06.mp4"></video><span>Döşeme Temizliği Çalışması</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-07.mp4"></video><span>Panjur ve PVC Doğrama Montajı</span></div><div class="work-tile"><video controls preload="none" playsinline src="galeri/video-08.mp4"></video><span>Makine ile Zemin Temizliği</span></div></div></div></section>
 
 <section class="section areas">
   <div class="container">
@@ -140,5 +151,50 @@
 </footer>
 
 <script src="script.js"></script>
+
+<div class="photo-lightbox" id="photo-lightbox" role="dialog" aria-modal="true" aria-label="Fotoğraf görüntüleyici" aria-hidden="true">
+  <button type="button" class="photo-lightbox__close" aria-label="Kapat">×</button>
+  <figure class="photo-lightbox__figure">
+    <img class="photo-lightbox__image" alt="">
+    <figcaption class="photo-lightbox__caption"></figcaption>
+  </figure>
+</div>
+<script>
+(function () {
+  const modal = document.getElementById('photo-lightbox');
+  const image = modal.querySelector('.photo-lightbox__image');
+  const caption = modal.querySelector('.photo-lightbox__caption');
+  const closeButton = modal.querySelector('.photo-lightbox__close');
+  let previousFocus = null;
+  function close() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    image.removeAttribute('src');
+    document.body.style.overflow = '';
+    if (previousFocus) previousFocus.focus();
+  }
+  document.querySelectorAll('#galeri a.work-tile[href]').forEach(function (link) {
+    link.removeAttribute('target');
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      previousFocus = document.activeElement;
+      image.src = link.getAttribute('href');
+      image.alt = link.querySelector('img')?.alt || 'Çalışma fotoğrafı';
+      caption.textContent = link.querySelector('span')?.textContent || image.alt;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      closeButton.focus();
+    });
+  });
+  closeButton.addEventListener('click', close);
+  modal.addEventListener('click', function (event) { if (event.target === modal) close(); });
+  document.addEventListener('keydown', function (event) {
+    if (!modal.classList.contains('is-open')) return;
+    if (event.key === 'Escape') close();
+    if (event.key === 'Tab') { event.preventDefault(); closeButton.focus(); }
+  });
+})();
+</script>
 </body>
 </html>

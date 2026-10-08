@@ -38,6 +38,8 @@ footer{background:#031b2c;color:#d7e1e8;padding:48px 0 24px}.footer-grid{display
 .brand img, .logo img, header img[alt*="logo"], .site-logo img {max-height:90px !important; width:auto !important; object-fit:contain;}
 .hero-card img {display:block; width:100% !important; max-width:520px; max-height:360px !important; height:auto !important; object-fit:contain; margin:0 auto 16px;}
 @media(max-width:700px){.brand img,.logo img,header img[alt*="logo"]{max-height:66px !important;}.hero-card img{max-height:280px !important;}}
+
+/* Ust menudeki logo duzenlemesi */
 .logo {
   background: transparent !important;
   border: none !important;
@@ -52,3 +54,4 @@ footer{background:#031b2c;color:#d7e1e8;padding:48px 0 24px}.footer-grid{display
   height: 76px;
   object-fit: contain;
   border-radius: 12px;
+}
